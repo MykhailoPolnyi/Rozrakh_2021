@@ -63,3 +63,51 @@ y = ∫y' = ∫((x+1)²/4 + Cln(x+1) + C2)dx = ∫(x+1)²d(x+1)/4 +
 + ∫Cln(x+1)d(x+1) + ∫C2dx = (x+1)³/12 + C*((x+1)ln(x+1) - (x+1)) + C2x + C3
 
 y = (x+1)³/12 + C*((x+1)ln(x+1) - (x+1)) + C2x + C3
+
+
+10.16
+y′′′ tg x = y′′ + 1
+
+y'' = z(x)
+
+z'tg(x) = z + 1 
+
+z' = z*ctg(x) + ctg(x)
+z = uv
+
+u'v + uv' = uvctg(x) + ctg(x)
+u'v + u(v' - vctg(x)) = ctg(x)
+
+/
+| v' - v ctg(x) = 0
+| u'v = ctg(x)
+\
+
+dv/dx - v ctg(x) = 0 | :v, *dx
+
+dv/v - ctg(x)dx = 0
+
+ln(v) - ∫ctg(x)dx = 0
+
+ln(v) - ∫cos(x)dx/sin(x) = 0
+
+ln(v) - ∫dsin(x)/sin(x) = 0
+
+ln(v) - ln(sin(x)) = C, C = 0
+v - sinx = 0
+v = sin(x)
+
+u'sin(x) = ctg(x)
+
+du/dx * sin(x) = ctg(x) | *dx, :sin(x)
+
+du = cos(x)dx/sin²(x)
+
+u = ∫d(sin(x))/sin²(x) = ∫sin^(-2)d(sin(x)) =  -1/sin(x) + C1
+
+z = uv = -sin(x)/sin(x) + C1*sin(x) = C1*sin(x) - 1
+
+y'' = C1*sin(x) - 1
+y' = ∫(C1*sin(x)-1)dx = C1∫dx*sin(x) -x + C2 = -C1cos(x) - x + C2
+y = ∫y'dx = ∫(C2 - C1cos(x) - x)dx = C2x -C1∫cos(x)dx - x²/2 =
+= C2x - C1sin(x) - x²/2 + C3
