@@ -1,0 +1,22 @@
+y = xy′ + 4 ctg y'
+
+{
+  y' = t
+  y = xt + 4ctg(t) |* d/dx
+  dy/dx = t + (x-4/sin²(t))dt/dx
+  t = t + (x-4/sin²(t))dt/dx
+
+  (x-4/sin²(t))dt/dx = 0
+  dt/dx = 0 => t = C => y' = C
+
+  x-4/sin²(t) = 0
+  x = 4/sin²(t)
+}
+  Загальний розв'язок: 
+  y = x*C + 4ctg(C)
+
+  Особливий розв'язок:
+ /
+ | x = 4/sin²(t)
+ | y = 4(t/sin²(t) + ctg(t))
+ \
