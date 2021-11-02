@@ -1,0 +1,124 @@
+∫√
+7.6
+y = x(y')² + (y')³
+
+/
+| x = f(t)
+| y = g(t)
+\
+
+y` = t:
+
+y = xt² + t³  | : dx
+{
+  (xt² + t³)/dx = (xt²)/dx + (t³)/dx = 
+  = (xt²)/dx + (t³*dt)/(dx*dt) =
+  = dx/dx*t² + x*(d(t²)/dx) + t³/dt * dt/dx =
+  = t² + x * d(t²)/dt * dt/dx + 3t²*dt/dx =
+  = t² + (x*2t + 3t²) * dt/dx
+}
+
+dy/dx = t² + (x*2t + 3t²)*dt/dx
+dy/dx = y' = t
+
+t = t² + (x*2t + 3t²)*dt/dx
+t - t² = (x*2t + 3t²)*dt/dx |:dt * dx
+
+(t-t²)dx/dt = 2xt + 3t²
+
+(t-t²) x' = 2xt + 3t² |: (t-t²)
+
+x' = x*2t/(t-t²) + 3t²/(t-t²)
+x' - x*2t/(t-t²) = 3t²/(t-t²)
+
+x(t) = u(t) * v(t) -> x' = u'v + v'u
+
+u'v + v'u - uv * 2t/(t-t²) = 3t²/(t-t²)
+
+u'v + u(v' - v * 2t/(t-t²)) = 3t²/(t-t²)
+
+/
+| v' - v * 2t/(t-t²) = 0 
+| u'v = 3t²/(t-t²)
+\
+
+dv/dt - v * 2t/(t-t²) = 0 |:v,  *dt
+dv/v - 2*dt/(1-t) = 0 |∫
+
+ln(v) + 2 ∫d(1 - t)/(1 - t) = 0
+ln(v) + 2 ln(1-t) = ln(C), C = 1 => ln(c) = 0
+
+ln(v) = - ln((1-t)²) = ln((1-t)^(-2))
+v = 1/(1-t)²
+
+u'/(1-t)² = 3t²/t(1-t) | * (1-t)
+u'/(1-t) = 3t
+u' = 3t(1-t) = 3t - 3t²
+du/dt = 3t - 3t²
+
+du = (3t - 3t²)dt   |∫
+u = ∫(3t - 3t²)dt = ∫3tdt - ∫3t²dt = 3t²/2 - t³ + C1
+
+/
+| x = uv = (3t²/2 - t³ + C1)/(1-t²)
+| y = xt² + t³ = t²(3t²/2 - t³ + C1)/(1-t²) + t³
+\
+
+7.17
+
+y = x (1 + 2y′) + ln (y′ + 1)
+y' = t
+
+y = x(1+2t) + ln(t+1) |:dx
+
+dy/dx = (1+2t) + (2x + 1/(t+1))dt/dx
+t = 1 + 2t + (2x + 1/(t+1))dt/dx
+
+-1 - t = (2x + 1/(t+1))dt/dx
+-(1+t)*dx/dt = 2x + 1/(t+1) | : -(1+t)
+
+dx/dt = -2x/(1+t) - 1/(t+1)²
+x' = x * (-2)/(1+t) - 1/(t+1)²
+x(t) = u(t) * v(t)
+
+u'v + uv' = -2uv/(1+t) - 1/(t+1)²
+u'v + u(v'+2v/(t+1) = -1/(t+1)²
+
+/
+|  v` + 2v/(t+1) = 0
+|  u`v + 1/(t+1)² = 0
+\ 
+
+dv/dt + 2v/(t+1) = 0
+
+dv/v + 2dt/(t+1) = 0  |∫
+
+ln(v) + 2∫d(t+1)/(t+1) = 0
+
+ln(v) + 2ln(t+1) = ln(C1), C1 = 1 -> ln(C1) = 0
+
+ln(v) + ln((t+1)²) = 0
+
+ln(v) = -ln((t+1)²) = ln((t+1)^(-2)) 
+
+v = 1/(t+1)²
+
+u'/(t+1)² + 1/(t+1)² = 0 | *(t+1)²
+
+u' + 1 = 0
+
+du/dt = -1
+
+du = -dt
+
+u = -t + C2
+
+x = uv = (C2-t)/(t+1)²
+y = x(1+2t) + ln(t+1) = (C2-t)/((t+1)²*(1+2t)) + ln(t+1)
+
+/
+| x = (C2-t)/(t+1)²
+| y = (C2-t)/((t+1)²*(1+2t)) + ln(t+1)
+\
+
+
