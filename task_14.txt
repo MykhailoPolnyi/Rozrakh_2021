@@ -1,0 +1,62 @@
+∫√
+14.17
+y'' + 16y = 16/cos(4x)
+
+I 
+y'' + 16y = 0
+
+λ² + 16 = 0
+
+λ² = -16
+    / 4i
+λ = |
+    \ -4i
+
+y1 = e^(-4ix) = (cos4x  - i sin4x)
+y2 = e^(4ix) = (cos4x + i sin4x)
+y = C1y1 + C2y2 = C1(cos4x - i sin4x) + C2(cos4x + isin4x)
+y = cos4x(C1+C2) + isin4x(C2-C1)
+C3 = C1+C2; C4=C2-C1
+_
+y = C3cos4x + iC4sin4x
+
+y* = C3(x)cos4x + iC4(x)sin4x
+
+/
+| C3'(x)cos4x + iC4'(x)sin4x = 0
+| -4C3'(x)sin4x + 4iC4'(x)cos4x = 16/cos(4x)
+\
+
+    |cos4x    isin4x |
+Δ = |		         | = 4icos²(4x) + 4isin²(4x) = 4i(cos²4x+sin²4x) = 4i
+    |-4sin4x  4icos4x|
+
+
+
+     |0           isin4x |      
+ Δ1= |                   | = - 16ictg(4x)
+     |16/cos(4x)  4icos4x|      
+
+
+    |cos4x           0     |
+Δ2 =|                      | = 16
+    |-4sin4x     16/cos(4x)|
+
+
+C3'(x) = Δ1/Δ = -16ictg(4x)/4i = -4ctg(4x)
+C4'(x) = Δ2/Δ = 16/4i = 4/i = 4i/-1 = -4i
+
+
+
+
+∫C3'(x)dx = -∫cos(4x)d(4x)/sin(4x)
+C3(x) = -∫dsin(4x)/sin(4x) 
+C3(x) = -ln(sin(4x)) + C5
+C3(x) = ln(1/sin(4x)) = ln(cosec(4x))
+
+∫C4'(x) = ∫-4idx
+C4(x) = -4ix + C6
+
+y* = (ln(cosec(4x)) + C5)*cos(4x) - (C6 - 4ix)*sin(4x)
+         _
+y = y* + y = (ln(cosec(4x)) + C5)*cos(4x) - (C6 - 4ix)*sin(4x) + C3cos4x + iC4sin4x
